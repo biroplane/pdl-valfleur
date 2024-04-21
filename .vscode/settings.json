@@ -42,7 +42,7 @@
     { "rule": "*-order", "severity": "off" },
     { "rule": "*-dangle", "severity": "off" },
     { "rule": "*-newline", "severity": "off" },
-    { "rule": "*quotes", "severity": "off" }, 
+    { "rule": "*quotes", "severity": "off" },
     { "rule": "*semi", "severity": "off" }
   ],
 
