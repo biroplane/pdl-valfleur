@@ -4,7 +4,13 @@ import process from 'node:process'
 export default defineNuxtConfig({
   ssr: true,
   nitro: {
-    static: true,
+    // static: true,
+  },
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+    head: {
+      link: [{ rel: 'icon', type: 'image/png', href: '/favicon.png' }],
+    },
   },
   devtools: { enabled: true },
   css: ['./assets/css/app.pcss'],
@@ -15,11 +21,7 @@ export default defineNuxtConfig({
     '@nuxt/devtools',
     'vue3-carousel-nuxt',
   ],
-  image: {
 
-    // provider: process.env.NODE_ENV === 'development' ? '' : 'ipx',
-    // providers: ['netlify', 'ipx'],
-  },
   routeRules: {
     '/': { isr: true, prerender: true },
   },

@@ -1,6 +1,12 @@
 <script setup lang="ts">
+const { $seo } = useNuxtApp()
+// import seo from '~/plugins/seo'
+
 // import { Carousel, Slide } from "vue3-carousel"
 // import "vue3-carousel/dist/carousel.css"
+
+// useSeo
+$seo('Benvenuti', 'Valfleur offre ai propri clienti un vasto assortimento di fiori recisi e in vaso, piante ornamentali, da interno ed esterno, vasi in ceramica, vetro e plastica, accessori per la casa e idee regalo.', '/hero.jpg')
 const puntidiforza = ref([
   { title: 'Professionalità', img: '/professionalita.jpg' },
   { title: 'Esperienza', img: '/esperienza.jpg' },
