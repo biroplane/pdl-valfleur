@@ -2,6 +2,7 @@
 import process from 'node:process'
 
 export default defineNuxtConfig({
+  compatibilityDate:"2024-09-09",
   ssr: true,
   nitro: {
     // static: true,
@@ -20,6 +21,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/devtools',
     'vue3-carousel-nuxt',
+    '@nuxthq/studio',
   ],
 
   routeRules: {
