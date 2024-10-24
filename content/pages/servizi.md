@@ -10,12 +10,6 @@ Eros natoque curae; sagittis ad phasellus sapien. Dictumst, neque ut potenti nis
 
 <p>
 
-Dolor a odio lobortis, massa mattis pretium dui lacinia sed commodo. Pulvinar senectus eros viverra. Erat eros torquent tristique gravida habitant platea eget sapien vehicula gravida. Diam, risus habitant lacus. Hac viverra ultricies aliquet tempor. Himenaeos suspendisse cubilia scelerisque vestibulum feugiat consequat faucibus. Senectus eros cum nunc. Nibh inceptos diam fringilla ullamcorper fames dictumst morbi vulputate eget.
-
-</p>
-
-<p>
-
 Hac lorem pellentesque a elit consequat dictumst netus ante. Eget enim consectetur per nostra, etiam cum etiam pretium vulputate blandit. Felis orci malesuada ridiculus facilisis. Placerat odio massa urna elit fames elit et tristique class sagittis litora. Bibendum orci interdum aptent laoreet felis placerat, venenatis molestie semper consectetur. Pretium class nibh class nec erat, tristique quisque eu euismod. Lacinia, taciti sollicitudin platea nibh iaculis netus. Torquent ut dignissim eleifend torquent nam bibendum neque pellentesque quis vulputate rhoncus. Turpis dictumst nascetur nibh vitae taciti vulputate tortor leo.
 
 </p>
