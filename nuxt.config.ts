@@ -2,6 +2,7 @@
 import process from 'node:process'
 
 export default defineNuxtConfig({
+  compatibilityDate: '2024-08-14',
   ssr: true,
   nitro: {
     // static: true,
@@ -20,9 +21,16 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/devtools',
     'vue3-carousel-nuxt',
+    '@nuxt/content',
+    '@nuxthq/studio',
   ],
 
   routeRules: {
     '/': { isr: true, prerender: true },
   },
+  alias: {
+    'micromark/lib/preprocess.js': 'micromark',
+    'micromark/lib/postprocess.js': 'micromark',
+  },
+
 })
