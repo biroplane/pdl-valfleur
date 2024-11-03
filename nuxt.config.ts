@@ -14,7 +14,7 @@ export default defineNuxtConfig({
     },
   },
   devtools: { enabled: true },
-  css: ['./assets/css/app.pcss'],
+  css: ['./assets/css/typography.css', './assets/css/app.pcss'],
   modules: [
     '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
@@ -24,6 +24,14 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxthq/studio',
   ],
+  content: {
+    documentDriven: true,
+    experimental: {
+      search: {
+        indexed: true,
+      },
+    },
+  },
 
   routeRules: {
     '/': { isr: true, prerender: true },

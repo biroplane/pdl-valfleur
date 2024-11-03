@@ -39,7 +39,7 @@ module.exports = {
       },
       fontFamily: {
         body: 'Raleway',
-        head: ['Bodoni\\ Moda', 'serif'],
+        head: ['Cutterlines', 'Manuscribe', 'Pallawa', 'Gamata', 'serif'],
       },
       aspectRatio: {
         '3/4': '3 / 4',

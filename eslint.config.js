@@ -1,4 +1,4 @@
-import antfu from "@antfu/eslint-config"
+import antfu from '@antfu/eslint-config'
 
 export default antfu({
   // Enable stylistic formatting rules
@@ -17,10 +17,13 @@ export default antfu({
   // Disable jsonc and yaml support
   jsonc: false,
   yaml: false,
+  rules: {
+    'no-console': 'off',
+  },
 
   // `.eslintignore` is no longer supported in Flat config, use `ignores` instead
   ignores: [
     '**/fixtures',
-    // ...globs
-  ]
+
+  ],
 })

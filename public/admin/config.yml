@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: https://github.com/biroplane/pdl-valfleur/
   squash_merges: true
   branch: main
 
@@ -7,6 +8,8 @@ local_backend: true
 
 media_folder: public/img
 public_folder: public
+
+publish_mode: simple
 
 collections:
   - name: "pages"
@@ -33,10 +36,10 @@ collections:
           multiple: true,
           required: false,
         }
-  - name: "post"
-    label: "Blog"
-    label_singular: "Blog"
-    folder: "content/blog/"
+  - name: "services"
+    label: "Servizi"
+    label_singular: "Servizio"
+    folder: "content/services/"
     create: true
     format: "frontmatter"
     preview: true
@@ -49,7 +52,7 @@ collections:
           required: false,
         }
       - { name: "title", label: "Titolo", widget: "string" }
-      - { name: "body", label: "Test", widget: "markdown" }
+      - { name: "body", label: "Descrizione", widget: "markdown" }
       - {
           name: "gallery",
           label: "Immagini",
@@ -58,24 +61,100 @@ collections:
           required: false,
         }
       - {
-          label: "Tags",
           name: "tags",
-          widget: "list",
-          collapsed: true,
-          allow_add: true,
-          field: { name: "tag", label: "Tag", widget: "string" },
-          # fields:
-          #   [
-          #     { label: "Nome ", name: "tag", widget: "string" },
-          #     {
-          #       label: "Prezzo",
-          #       name: "price",
-          #       widget: "number",
-          #       value_type: "float",
-          #     },
-          #   ],
+          label: "Tags",
+          widget: "relation",
+          collection: "tags",
+          value_field: "{{slug}}",
+          display_fields: ["title"],
+          search_fields: ["title"],
+          required: false,
+          multiple: true,
         }
-
+      - {
+          name: "categories",
+          label: "Categories",
+          widget: "relation",
+          collection: "categories",
+          value_field: "{{slug}}",
+          display_fields: ["title"],
+          multiple: false,
+          search_fields: ["title", "slug"],
+        }
+  - name: "categories"
+    label: "Categories"
+    folder: "content/categoria"
+    slug: "{{slug}}"
+    format: "frontmatter"
+    preview_path: "categoria/{{slug}}"
+    create: true
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - {
+          name: "featured",
+          label: "Featured",
+          widget: "boolean",
+          default: false,
+          required: false,
+        }
+      - {
+          name: "visible",
+          label: "Visible",
+          widget: "boolean",
+          default: true,
+          required: false,
+        }
+      - {
+          name: "custom",
+          label: "custom",
+          widget: "boolean",
+          default: false,
+          required: false,
+        }
+      - { name: "images", label: "Images", widget: "image", required: false }
+      - { name: "body", label: "Description", widget: "markdown" }
+      - {
+          name: "order",
+          label: "Order",
+          widget: "number",
+          required: false,
+          default: 9999,
+        }
+  - name: "tags"
+    label: "Tags"
+    folder: "content/tags"
+    format: "frontmatter"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - { name: "title", label: "Title", widget: "string" }
+      - {
+          name: "featured",
+          label: "Featured",
+          widget: "boolean",
+          required: false,
+        }
+      - {
+          name: "visible",
+          label: "Visible",
+          widget: "boolean",
+          required: false,
+        }
+      - {
+          name: "images",
+          label: "Images",
+          widget: "image",
+          required: false,
+          allow_multiple: false,
+        }
+      - {
+          name: "body",
+          label: "Description",
+          widget: "markdown",
+          required: false,
+        }
+      - { name: "order", label: "Order", widget: "number", required: false }
+  # - name: "ingredients"
   # - name: "products"
   #   label: "Products"
   #   folder: "content/products"
