@@ -2,7 +2,14 @@
 export default defineNuxtConfig({
   ssr: true,
   compatibilityDate: '2024-04-03',
+  experimental: {
+    viewTransition: true,
+  },
   devtools: { enabled: true },
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
+    layoutTransition: { name: 'page', mode: 'out-in' },
+  },
   css: [
     './assets/css/typography.css',
     './assets/css/app.pcss',
@@ -13,9 +20,10 @@ export default defineNuxtConfig({
     'nuxt-og-image',
     '@nuxt/content',
     '@nuxt/image',
+    '@vueuse/motion/nuxt',
   ],
   content: {
-    documentDriven: true,
+    // documentDriven: true,
     experimental: {
       search: {
         indexed: true,

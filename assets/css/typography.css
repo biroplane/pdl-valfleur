@@ -21,10 +21,26 @@
   src: url(../fonts/Manuscribe_Regular.otf) format('opentype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Manuscribe";
   src: url(../fonts/Manuscribe_Italic.otf) format('opentype');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MoreLight";
+  src: url(../fonts/More-Light.otf) format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MoreLight";
+  src: url(../fonts/More-Light-Italic.otf) format('opentype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
 }

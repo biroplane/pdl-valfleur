@@ -22,7 +22,7 @@ module.exports = {
     extend: {
 
       colors: {
-        black: '#01011b',
+        black: '#1F1F1D',
         primary: {
           DEFAULT: '#D3AF5F',
           50: '#FFFCEB',
@@ -40,7 +40,7 @@ module.exports = {
       },
       fontFamily: {
         body: 'Raleway',
-        head: ['Cutterlines', 'Manuscribe', 'Pallawa', 'Gamata', 'serif'],
+        head: ['Manuscribe', 'Cutterlines', 'Pallawa', 'Gamata', 'serif'],
       },
       aspectRatio: {
         '3/4': '3 / 4',

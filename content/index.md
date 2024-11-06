@@ -1,5 +1,6 @@
 ---
 title: Valfleur Gaerden
+navigation: false
 ---
 
 ::hero

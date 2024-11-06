@@ -7,7 +7,7 @@
     <div class="col-start-1 col-end-1 row-start-1 flex items-center justify-center px-8 md:px-0">
       <div class="max-w-lg  mx-auto">
         <h1
-          class=" italic font-head text-4xl md:text-9xl text-primary-500"
+          class=" italic font-head text-4xl md:text-7xl text-primary-500"
         >
           Valfleur Garden
         </h1>

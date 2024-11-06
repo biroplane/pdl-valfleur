@@ -1,12 +1,14 @@
 <script setup lang="ts">
-defineProps<{ items: any[], config?: any }>()
+import { Carousel, Slide } from 'vue3-carousel'
+
+defineProps<{ items: any, config?: any }>()
 
 const currentSlide = ref(0)
 </script>
 
 <template>
   <div class="">
-    <Carousel v-bind="config" v-model="currentSlide" class="w-full" :autoplay="5000" :items-to-show="1" :wrap-around="true" :pause-autoplay-on-hover="true">
+    <Carousel v-bind="config" v-model="currentSlide" class="w-full" :items-to-show="1" :wrap-around="true" :pause-autoplay-on-hover="true">
       <Slide v-for="(item, i) in items" :key="i">
         <slot name="item" :item="item" :index="i" />
       </Slide>

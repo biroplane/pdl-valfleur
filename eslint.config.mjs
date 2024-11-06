@@ -18,6 +18,10 @@ export default antfu({
   typescript: true,
   vue: true,
 
+  rules:{
+    'no-console':'off'
+  },
+
   // Disable jsonc and yaml support
   jsonc: false,
   yaml: false,
