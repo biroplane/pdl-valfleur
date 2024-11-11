@@ -21,6 +21,7 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/image',
     '@vueuse/motion/nuxt',
+    '@nuxthq/studio',
   ],
   content: {
     documentDriven: true,
