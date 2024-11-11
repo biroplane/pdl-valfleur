@@ -1,3 +1,0 @@
-<template>
-  Single category
-</template>

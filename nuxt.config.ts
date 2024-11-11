@@ -23,7 +23,7 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt',
   ],
   content: {
-    // documentDriven: true,
+    documentDriven: true,
     experimental: {
       search: {
         indexed: true,
