@@ -1,5 +1,5 @@
 ---
-title: Bouquet
+title: Bouquet da sposa
 categories: matrimioni
 ---
-I nostri maestri fioristi lavorano con dedizione e maestria per creare bouquet e composizioni floreali che raccontano storie, emozionano e lasciano un'impronta indelebile nei vostri ricordi. Utilizzando solo fiori freschi e di altissima qualità, ogni nostro lavoro è un'opera d'arte unica, pensata su misura per voi.
+Il bouquet è il cuore del look della sposa. Da Valentino Valfleur, lo realizziamo con cura e passione,scegliendo i fiori che meglio rappresentano il tuo stile e la tua personalità. Ogni bouquet è un’opera d’arte, perfettamente coordinata con il tema e i colori del tuo matrimonio.

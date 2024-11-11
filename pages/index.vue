@@ -37,19 +37,19 @@ const { data: chisiamo } = await useAsyncData('chisiamo', () => queryContent('/p
       </div>
       <section>
         <div class="p-12 grid md:grid-cols-2 gap-24">
-          <div class="image h-96">
+          <div v-motion-slide-visible-left class="image h-96">
             <NuxtImg :src="chisiamo?.cover" class="w-full h-full object-cover rounded-md" />
           </div>
           <div class="max-w-xl">
-            <h3 class="text-4xl  mb-12">
+            <h3 v-motion-slide-visible-right class="text-4xl  mb-12">
               {{ chisiamo?.title }}
             </h3>
 
-            <ContentRendererMarkdown :value="chisiamo as Record<string, any>" class="leading-8" />
+            <ContentRendererMarkdown v-motion-slide-visible-right :delay="300" :value="chisiamo as Record<string, any>" class="leading-8" />
           </div>
         </div>
       </section>
-      <section>
+      <section v-motion-slide-visible-bottom>
         <div class="text-center">
           <h2 class="text-center text-6xl py-12">
             Servizi
@@ -58,7 +58,7 @@ const { data: chisiamo } = await useAsyncData('chisiamo', () => queryContent('/p
             Scopri i servizi
           </div>
         </div>
-        <Gallery :items="categories" class="container">
+        <Gallery :items="categories" class="max-w-4xl mx-auto">
           <template #item="{ item, index }">
             <div class="w-full flex flex-col md:flex-row justify-between px-4 py-8 gap-4 md:gap-24">
               <div class="w-full md:w-1/3 h-48 md:h-96 min-w-[30%]" :class="{ 'md:order-last ': index % 2 === 0 }">
@@ -68,7 +68,7 @@ const { data: chisiamo } = await useAsyncData('chisiamo', () => queryContent('/p
                 <h3 class="text-3xl md:text-6xl mb-8 font-head text-primary-500">
                   {{ item.title }}
                 </h3>
-                <div class="">
+                <div class="text-balance">
                   <ContentRenderer :value="item" excerpt />
                 </div>
 
