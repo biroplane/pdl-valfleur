@@ -1,7 +1,7 @@
 <template>
-  <main>
+  <main class="prose mx-auto">
     Hello {{ $route.params.slug }}
 
-    <ContentDoc class="prose" />
+    <ContentDoc />
   </main>
 </template>
