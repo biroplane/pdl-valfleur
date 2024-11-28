@@ -71,6 +71,7 @@ collections:
           search_fields: ["title"],
           required: false,
           multiple: true,
+          max: 5,
         }
       - {
           name: "categories",

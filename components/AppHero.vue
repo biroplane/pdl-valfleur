@@ -15,8 +15,8 @@ defineProps<{
       <NuxtImg :src="image ?? '/img/hero.jpg'" alt="" class="w-full h-full object-cover object-right" />
     </div>
     <div class="col-start-1 col-end-2 row-start-1 row-end-1 bg-gradient-to-r via-primary-900/50 via-70% from-primary-900" />
-    <div class="col-start-1 col-end-1 row-start-1 flex items-center justify-center px-8 md:px-0">
-      <div class="max-w-lg  mx-auto">
+    <div class="col-start-1 col-end-1 row-start-1 flex items-center justify-center px-0 md:px-0">
+      <div class="px-8 lg:max-w-lg  mx-auto">
         <slot>
           <h1
             class=" italic font-head text-4xl md:text-7xl text-primary-500"

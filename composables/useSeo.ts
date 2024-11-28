@@ -1,5 +1,6 @@
+// eslint-disable-next-line ts/explicit-function-return-type
 export function useSeo({ title, description }: { title: string, description: string }) {
-  defineOgImageComponent('NuxtSeo', {
+  defineOgImageComponent('CustomOg', {
     title,
     description,
     theme: 'DE454F',

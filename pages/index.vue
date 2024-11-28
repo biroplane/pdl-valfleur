@@ -18,17 +18,17 @@ const { data: chisiamo } = await useAsyncData('chisiamo', () => queryContent('/p
 
 <template>
   <main class="relative pt-12">
-    <div class="bg-neutral-100 pt-16 px-12 min-h-[auto] ">
-      <div class=" h-full overflow-hidden rounded-2xl ">
+    <div class="lg:px-12">
+      <RoundedWrap class="p-0 ">
         <AppHero />
-      </div>
+      </RoundedWrap>
 
-      <div class=" px-12 mb-24 z-50">
-        <ul class="grid grid-cols-3 gap-12 -mt-24 ">
+      <div class="px-4 lg:px-12 mb-24 z-50">
+        <ul class="grid grid-cols-3 gap-4 md:gap-12 -mt-24 ">
           <li v-for="(pdf, p) in puntidiforza" :key="p" v-motion-pop-visible class="" :delay="p * 100">
             <div class=" ">
-              <NuxtImg :src="pdf.img" class="w-full  object-cover h-96 rounded-xl" />
-              <h3 class="text-4xl text-primary-800 mt-8">
+              <NuxtImg :src="pdf.img" class="w-full  object-cover h-48 md:h-96 rounded-xl" />
+              <h3 class="text-sm md:text-xl lg:text-4xl text-primary-800 mt-8">
                 {{ pdf.title }}
               </h3>
             </div>
@@ -36,7 +36,7 @@ const { data: chisiamo } = await useAsyncData('chisiamo', () => queryContent('/p
         </ul>
       </div>
       <section>
-        <div class="p-12 grid md:grid-cols-2 gap-24">
+        <div class="p-6 lg:p-12 grid md:grid-cols-2 gap-24">
           <div v-motion-slide-visible-left class="image h-96">
             <NuxtImg :src="chisiamo?.cover" class="w-full h-full object-cover rounded-md" />
           </div>

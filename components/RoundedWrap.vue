@@ -1,0 +1,7 @@
+<template>
+  <section class="p-4 md:p-6 lg:p-12">
+    <div class="rounded-xl overflow-hidden shadow-xl">
+      <slot />
+    </div>
+  </section>
+</template>
