@@ -1,11 +1,10 @@
-# Contatti
-
 ### Valfleur Garden
 di Valentino Cagnetta
 
 Via Cimitero, 4
+<!--more-->
 
-[Chimaci](telefono)
+[Chimaci](tel://+393477979762)
 
 [Whatsapp](telefono)
 

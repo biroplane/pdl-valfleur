@@ -11,13 +11,19 @@ useSeo({ title: service.value?.title as string, description: service.value?.desc
 
 <template>
   <main>
-    <RoundedWrap>
+    <RoundedWrap padding>
       <Hero :title="service?.title" :image="service?.images" />
     </RoundedWrap>
+    <div class="prose mx-auto my-12 px-8">
+      <h1>{{ service?.title }}</h1>
+      <ContentDoc :path="$route.path" class="" />
+    </div>
 
-    <ContentDoc :path="$route.path" class="prose mx-auto my-12 px-8" />
-
-    <Gallery v-if="service?.gallery" :items="service?.gallery" />
+    <Gallery v-if="service?.gallery" :items="service?.gallery" :config="{ itemsToShow: 5 }">
+      <template #item="{ item }">
+        <img :src="item" class="h-full object-cover">
+      </template>
+    </Gallery>
 
     <Surround :navigation="{ prev, next }" />
   </main>

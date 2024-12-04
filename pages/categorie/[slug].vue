@@ -17,10 +17,11 @@ console.log('FOUND SERVICE ', prev, next)
     <RoundedWrap>
       <Hero :title="category?.title" :image="category?.images" />
     </RoundedWrap>
-    <div class="container grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
+    <div class="container grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12 mt-12">
       <ServiceCard
-        v-for="service in services" :key="service._id"
-        :service="service"
+        v-for="(service, s) in services" :key="service._id"
+        v-motion-slide-visible-bottom
+        :service="service" :delay="s * 300"
       />
     </div>
     <Surround :navigation="{ prev, next }" />

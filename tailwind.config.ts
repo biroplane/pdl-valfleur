@@ -40,7 +40,7 @@ module.exports = {
       },
       fontFamily: {
         body: 'Inter',
-        head: ['"Playfair Display"', 'serif'],
+        head: ['Arsenica', 'Sunflower', '"Playfair Display"', 'serif'],
       },
       aspectRatio: {
         '3/4': '3 / 4',

@@ -6,8 +6,8 @@ import type { Tag } from './tag'
 export interface Service extends ParsedContent {
   cover?: string
   title?: string
-  body: MarkdownRoot
-  gallery: Image[]
-  tags: Tag[]
-  categories: Category[]
+  body: MarkdownRoot | null
+  gallery?: Image[]
+  tags?: Tag[]
+  categories?: Category[]
 }

@@ -1,8 +1,8 @@
 ---
 title: Allestimenti Matrimoniali
 gallery:
-  - /public/img/composizioni_2.png
-  - /public/img/composizioni_3.png
+  - /img/composizioni_2.png
+  - /img/composizioni_3.png
 categories: matrimioni
 ---
 L’atmosfera del tuo matrimonio inizia dall’ingresso in chiesa. Creiamo scenografie floreali
