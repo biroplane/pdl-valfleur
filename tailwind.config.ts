@@ -39,8 +39,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        body: 'Raleway',
-        head: ['Manuscribe', 'Cutterlines', 'Pallawa', 'Gamata', 'serif'],
+        body: 'Inter',
+        head: ['Arsenica', 'Sunflower', '"Playfair Display"', 'serif'],
       },
       aspectRatio: {
         '3/4': '3 / 4',

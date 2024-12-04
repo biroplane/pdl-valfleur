@@ -1,5 +1,3 @@
-import process from 'node:process'
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: true,
@@ -9,10 +7,20 @@ export default defineNuxtConfig({
   },
   devtools: { enabled: true },
   app: {
+    head: {
+      link: [
+        { rel: 'icon', type: 'image/png', href: '/favicon.png' },
+      ],
+      meta: [{ name: 'theme-color', content: '#1F1F1D' }],
+      htmlAttrs: {
+        lang: 'it',
+      },
+    },
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'page', mode: 'out-in' },
   },
   css: [
+    './assets/css/tailwind.pcss',
     './assets/css/typography.css',
     './assets/css/app.pcss',
   ],
@@ -29,7 +37,7 @@ export default defineNuxtConfig({
     enabled: true,
   },
   content: {
-    documentDriven: true,
+    // documentDriven: true,
     experimental: {
       search: {
         indexed: true,
@@ -39,5 +47,10 @@ export default defineNuxtConfig({
   site: {
     url: 'https://valfleur.it',
     name: 'Valfleur garden',
+  },
+  ogImage: {
+    defaults: {
+      component: 'CustomOg',
+    },
   },
 })

@@ -18,10 +18,9 @@ watchDebounced(searchTerm, async () => {
 </script>
 
 <template>
-  <div class="relative">
-    <div class="flex items-center border bg-neutral-700/0 transition-colors border-neutral-700/50 rounded-md h-10 text-neutral-700 focus-within:border-primary-500 focus-within:bg-neutral-100/50 relative">
-      <input v-model="searchTerm" class="bg-transparent focus:outline-none px-2">
-      <div class="w-8 h-8 mt-0.5 mr-1 text-neutral-700/50">
+  <div class="relative z-30">
+    <div class="flex items-center border-white/50 bg-white/0 transition-colors border-b h-10 text-white focus-within:border-neutral-300 focus-within:bg-neutral-100/20 ">
+      <div class="w-8 h-8 mt-0.5 mr-1 text-white/50">
         <svg v-if="searchTerm === ''" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24">
           <g fill="none" stroke="currentColor">
             <circle cx="11" cy="11" r="5.5" />
@@ -35,9 +34,10 @@ watchDebounced(searchTerm, async () => {
           </svg>
         </button>
       </div>
+      <input v-model="searchTerm" class="bg-transparent focus:outline-none px-2 ">
     </div>
     <transition name="slide-up">
-      <div v-if="searchResults && searchResults?.length > 0" class="absolute rounded-md mt-4 shadow-lg bg-primary-700 z-50 isolate max-h-96 overflow-y-auto no-scrollbar text-neutral-200 min-w-64">
+      <div v-if="searchResults && searchResults?.length > 0" class="absolute rounded-md mt-4 shadow-lg bg-primary-700 z-50 isolate max-h-96 overflow-y-auto no-scrollbar text-neutral-200 min-w-64 z-50">
         <h5 class="font-bold py-4 border-b border-current/10 px-4">
           Risultati della ricerca
         </h5>

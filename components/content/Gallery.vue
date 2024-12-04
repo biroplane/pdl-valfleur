@@ -8,9 +8,11 @@ const currentSlide = ref(0)
 
 <template>
   <div class="">
-    <Carousel v-bind="config" v-model="currentSlide" class="w-full" :items-to-show="1" :wrap-around="true" :pause-autoplay-on-hover="true">
+    <Carousel v-bind="config" v-model="currentSlide" class="w-full" :wrap-around="true" :pause-autoplay-on-hover="true">
       <Slide v-for="(item, i) in items" :key="i">
-        <slot name="item" :item="item" :index="i" />
+        <div class="px-4">
+          <slot name="item" :item="item" :index="i" />
+        </div>
       </Slide>
     </Carousel>
     <div class="flex items-center">

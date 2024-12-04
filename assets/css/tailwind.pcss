@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+  .text-shadow{
+
+  --text-shadow-color: white;
+  --spread: 1px;
+  --shift:1px;
+  --n_shift: calc(var(--shift) * -1);
+  text-shadow: 
+    var(--shift) var(--shift)  var(--spread) var(--text-shadow-color),
+    var(--n_shift) var(--shift) var(--spread) var(--text-shadow-color),
+    var(--shift) var(--n_shift) var(--spread) var(--text-shadow-color),
+    var(--n_shift) var(--n_shift) var(--spread) var(--text-shadow-color);
+    
+    
+}
+}
