@@ -14,6 +14,8 @@ console.log('FOUND SERVICE ', prev, next)
 
 <template>
   <main>
+    <div class="h-16 md:hidden" />
+
     <RoundedWrap>
       <Hero :title="category?.title" :image="category?.images" />
     </RoundedWrap>

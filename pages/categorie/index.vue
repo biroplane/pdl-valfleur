@@ -2,6 +2,7 @@
 import type { Service } from '~/models/service'
 
 const { data: categories } = await useAsyncData('[categorie]', () => queryContent('/categorie').find())
+useSeo({ title: 'I nostri servizi' as string, description: '' })
 </script>
 
 <template>

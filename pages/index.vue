@@ -4,7 +4,6 @@ import { Carousel, Slide } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
 useSeo({ title: 'Valfleur garden', description: 'Fiori belli' })
-definePageMeta({ })
 
 const puntidiforza = ref([
   { title: 'Professionalità', img: '/img/professionalita.jpg' },
@@ -13,14 +12,14 @@ const puntidiforza = ref([
 ])
 
 const { data: categories } = await useAsyncData('categories', () => queryContent<ParsedContent>('/categorie').find())
-const { data: services } = await useAsyncData('services', () => queryContent<ParsedContent>('/services').where({ _type: { $ne: 'yaml' } }).find())
+const { data: services } = await useAsyncData('services', () => queryContent<ParsedContent>('/services').where({ _type: { $ne: 'yaml' } }).sort({ categories: 1 }).find())
 const { data: chisiamo } = await useAsyncData('chisiamo', () => queryContent('/pages/chi-siamo').findOne())
 </script>
 
 <template>
   <main>
     <AppHero />
-    <div class="banner pt-24 pb-12 bg-green-500/20 text-center">
+    <div class="banner pt-12 lg:pt-24 pb-12 bg-green-500/20 text-center">
       <h2 class="text-3xl text-primary-900">
         Hai bisogno di un preventivo?
       </h2>
@@ -29,25 +28,25 @@ const { data: chisiamo } = await useAsyncData('chisiamo', () => queryContent('/p
       </NuxtLink>
     </div>
     <div class="px-4 lg:px-12  py-12">
-      <h1 class="text-center text-5xl">
+      <h1 class="text-center text-3xl lg:text-5xl">
         I nostri punti di forza
       </h1>
-      <ul class="grid md:grid-cols-3 gap-4 md:gap-24 mt-6  ">
+      <ul class="grid lg:grid-cols-3 gap-4 md:gap-24 mt-6  ">
         <li v-for="(pdf, p) in puntidiforza" :key="p" v-motion-pop-visible :delay="p * 100" class="mb-4 text-center">
           <div class=" ">
             <NuxtImg :src="pdf.img" class="w-full  object-cover h-32 md:h-96 rounded-xl" />
-            <h3 class="text-sm md:text-xl lg:text-4xl text-primary-800 mt-4 lg:mt-8">
+            <h3 class="text-sm md:text-3xl lg:text-4xl text-primary-800 mt-4 lg:mt-8">
               {{ pdf.title }}
             </h3>
           </div>
         </li>
       </ul>
     </div>
-    <div class="p-12 bg-green-950/10 ">
-      <h2 class="text-center text-5xl py-12 text-green-900">
+    <div class="p-8 lg:p-12 bg-green-950/10 ">
+      <h2 class="text-center text-5xl p-4 lg:py-12 text-green-900">
         Gallerie
       </h2>
-      <div class="grid grid-cols-4 container gap-12">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container gap-6 lg:gap-12">
         <ServiceCard v-for="(service, s) in services" :key="service._path" v-motion-pop-visible :service="service" :delay="s * 100" />
       </div>
     </div>

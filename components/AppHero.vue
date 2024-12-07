@@ -10,12 +10,12 @@ defineProps<{
 </script>
 
 <template>
-  <div class="grid w-full grid-cols-2 grid-rows-2 gap-8 h-[80dvh] ">
+  <div class="grid w-full grid-cols-2 grid-rows-2 gap-8 h-[100dvh] lg:h-[80dvh] ">
     <div class=" col-start-1 col-end-3 row-start-1 row-end-3">
       <NuxtImg :src="image ?? '/bouquet.jpg'" alt="" class="w-full h-full object-cover object-right masked" />
     </div>
-    <div class="row-start-2 col-start-1 p-12">
-      <div class="p-12 bg-green-950 rounded-2xl shadow-lg max-w-lg mt-12">
+    <div class="row-start-2 col-start-1 col-span-2 lg:col-span-1 p-4 lg:p-12">
+      <div class="p-8 lg:p-12 bg-green-950 rounded-2xl shadow-lg max-w-lg mt-12">
         <h1
           class="  font-head text-4xl md:text-6xl text-primary"
         >

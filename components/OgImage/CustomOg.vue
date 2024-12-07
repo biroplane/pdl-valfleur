@@ -13,7 +13,7 @@ withDefaults(defineProps<{
 }>(), {
   bg: 'linear-gradient(to bottom right, #171717, #131313)',
   // bg: 'url("/img/hero.jpg")',
-  logo: '/logo.png',
+  logo: 'logo.png',
   image: '/img/hero.jpg',
 })
 </script>
