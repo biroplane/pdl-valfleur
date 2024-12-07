@@ -1,7 +1,26 @@
-### Valfleur Garden
+## Valfleur Garden
 di Valentino Cagnetta
 
+<div class="grid grid-cols-2 py-4 tabular-nums">
+  <div>
+
+#### Indirizzo
 Via Cimitero, 4
+
+70038 - Terlizzi Ba
+
+Piva 1234543234
+  </div>
+  <div>
+
+  #### Orari di apertura
+  Lun - Ven
+
+  08:00 - 13:00
+
+  15:00 - 19:00
+  </div>
+</div>
 <!--more-->
 
 [Chimaci](tel://+393477979762)

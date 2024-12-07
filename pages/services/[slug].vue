@@ -11,11 +11,14 @@ useSeo({ title: service.value?.title as string, description: service.value?.desc
 
 <template>
   <main>
+    <div class="h-16 md:hidden" />
     <RoundedWrap padding>
       <Hero :title="service?.title" :image="service?.images" />
     </RoundedWrap>
     <div class="prose mx-auto my-12 px-8">
-      <h1>{{ service?.title }}</h1>
+      <h1 class="text-green-950">
+        {{ service?.title }}
+      </h1>
       <ContentDoc :path="$route.path" class="" />
     </div>
 
