@@ -11,7 +11,7 @@ defineProps<{ service: Service }>()
         <img :src="service.cover ?? `https://unsplash.it/640/425?image=${Math.round(Math.random() * 100)}`" class="row-start-1 row-end-2 col-start-1 col-end-2 h-full w-full object-cover">
       </ClientOnly>
       <div class="row-start-1 row-end-2 col-start-1 col-end-2 bg-white/70" />
-      <h2 class="text-3xl text-primary-900 italic font-light p-8 row-start-1 row-end-2 col-start-1 col-end-2 self-end text-balance ">
+      <h2 class="text-3xl text-primary-900 font-light p-8 row-start-1 row-end-2 col-start-1 col-end-2 self-end text-balance ">
         {{ service.title }}
       </h2>
     </div>
