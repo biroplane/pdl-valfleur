@@ -13,7 +13,7 @@ defineProps<{
 
 <template>
   <ClientOnly>
-    <div class="relative h-[30dvh] md:h-[50dvh]">
+    <div v-motion-pop-visible class="relative h-[30dvh] md:h-[50dvh]">
       <div class="absolute w-full h-full">
         <NuxtImg format="webp" :src="image ?? '/img/hero.jpg'" alt="" class="w-full h-full object-cover " />
         <div class="absolute inset-0 bg-primary/70 backdrop-blur-md" />

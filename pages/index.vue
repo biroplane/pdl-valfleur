@@ -47,7 +47,7 @@ const { data: chisiamo } = await useAsyncData('chisiamo', () => queryContent('/p
         Gallerie
       </h2>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container gap-6 lg:gap-12">
-        <ServiceCard v-for="(service, s) in services" :key="service._path" v-motion-pop-visible :service="service" :delay="s * 100" />
+        <ServiceCard v-for="(service) in services" :key="service._path" v-motion-pop-visible :service="service" />
       </div>
     </div>
     <section>
@@ -76,7 +76,7 @@ const { data: chisiamo } = await useAsyncData('chisiamo', () => queryContent('/p
       <Gallery :items="categories" class="max-w-4xl mx-auto">
         <template #item="{ item, index }">
           <div class="w-full flex flex-col md:flex-row justify-between px-4 py-8 gap-4 md:gap-24">
-            <div class="w-full md:w-1/3 h-48 md:h-96 min-w-[30%]" :class="{ 'md:order-last ': index % 2 === 0 }">
+            <div class="w-full md:w-2/5 h-48 md:h-96 min-w-[40%]" :class="{ 'md:order-last ': index % 2 === 0 }">
               <NuxtImg format="webp" :src="item.images" class="md:aspect-square w-full md:w-auto h-full object-center object-cover rounded-lg shadow-md" />
             </div>
             <div class=" text-left flex-grow" :class="{ 'md:-order-first': index % 2 === 1 }">
