@@ -37,7 +37,6 @@ export default defineNuxtConfig({
     enabled: true,
   },
   content: {
-    // documentDriven: true,
     experimental: {
       search: {
         indexed: true,

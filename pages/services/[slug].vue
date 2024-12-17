@@ -16,9 +16,6 @@ useSeo({ title: service.value?.title as string, description: service.value?.desc
       <Hero :title="service?.title" :image="service?.images" />
     </RoundedWrap>
     <div class="prose mx-auto my-12 px-8">
-      <h1 class="text-green-950">
-        {{ service?.title }}
-      </h1>
       <ContentDoc :path="$route.path" class="" />
     </div>
 
