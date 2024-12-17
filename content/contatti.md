@@ -1,4 +1,9 @@
-## Valfleur Garden
+---
+layout: none
+title: Contatti
+---
+
+# Valfleur Garden
 di Valentino Cagnetta
 
 <div class="grid grid-cols-2 py-4 tabular-nums">
