@@ -1,6 +1,6 @@
 ---
 title: Allestimenti Matrimoniali
-images:
+images: /img/composizioni_2.png
 gallery:
   - /img/composizioni_2.png
   - /img/composizioni_3.png

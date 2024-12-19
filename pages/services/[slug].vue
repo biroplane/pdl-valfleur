@@ -21,7 +21,7 @@ useSeo({ title: service.value?.title as string, description: service.value?.desc
 
     <Gallery v-if="service?.gallery" :items="service?.gallery" :config="{ itemsToShow: 5 }">
       <template #item="{ item }">
-        <img :src="item" class="h-full object-cover">
+        <img :src="item" class="h-64 md:h-96 w-screen object-cover">
       </template>
     </Gallery>
 

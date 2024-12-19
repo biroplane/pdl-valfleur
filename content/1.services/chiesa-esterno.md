@@ -1,7 +1,7 @@
 ---
 title: Allestimento esterno chiesa
 categories: matrimioni
-images: /img/servizi/chiesa-interno/chiesa_esterno_3.webp
+images: /img/servizi/chiesa-esterno/chiesa_esterno_3.webp
 gallery:
   - /img/servizi/chiesa-esterno/chiesa_esterno_1.webp
   - /img/servizi/chiesa-esterno/chiesa_esterno_2.webp
