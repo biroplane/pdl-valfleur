@@ -73,7 +73,7 @@ const { data: chisiamo } = await useAsyncData('chisiamo', () => queryContent('/p
           Scopri i servizi
         </div>
       </div>
-      <Gallery :items="categories" class="max-w-4xl mx-auto">
+      <Gallery :items="categories" class="max-w-4xl mx-auto" :config="{ breakpoints: { 700: { itemsToShow: 1 } } }">
         <template #item="{ item, index }">
           <div class="w-full flex flex-col md:flex-row justify-between px-4 py-8 gap-4 md:gap-24">
             <div class="w-full md:w-2/5 h-48 md:h-96 min-w-[40%]" :class="{ 'md:order-last ': index % 2 === 0 }">
