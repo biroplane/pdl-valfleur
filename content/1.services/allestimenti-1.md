@@ -1,6 +1,7 @@
 ---
 title: Allestimenti
 categories: giardini-e-terrazze
+images: /img/servizi/allestimento/allestimento.webp
 ---
 
 # Allestimenti di Giardini e Terrazze

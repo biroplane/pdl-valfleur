@@ -1,6 +1,7 @@
 ---
 title: Arredo
 categories: giardini-e-terrazze
+images: /img/servizi/arredo_giardino/arredo_giardino.webp
 ---
 # Arredo giardino
 

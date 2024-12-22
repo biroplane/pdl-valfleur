@@ -6,9 +6,9 @@ import 'vue3-carousel/dist/carousel.css'
 useSeo({ title: 'Valfleur garden', description: 'Fiori belli' })
 
 const puntidiforza = ref([
-  { title: 'Professionalità', img: '/img/professionalita.jpg' },
-  { title: 'Esperienza', img: '/img/esperienza.jpg' },
-  { title: 'Qualità', img: '/img/qualita.jpg' },
+  { title: 'Professionalità', img: '/img/professionalita.webp' },
+  { title: 'Esperienza', img: '/img/esperienza.webp' },
+  { title: 'Qualità', img: '/img/qualita.webp' },
 ])
 
 const { data: categories } = await useAsyncData('categories', () => queryContent<ParsedContent>('/categorie').find())
@@ -34,7 +34,7 @@ const { data: chisiamo } = await useAsyncData('chisiamo', () => queryContent('/p
       <ul class="grid lg:grid-cols-3 gap-4 md:gap-24 mt-6  ">
         <li v-for="(pdf, p) in puntidiforza" :key="p" v-motion-pop-visible :delay="p * 100" class="mb-4 text-center">
           <div class=" ">
-            <NuxtImg :src="pdf.img" class="w-full  object-cover h-32 md:h-96 rounded-xl" />
+            <NuxtImg loading="lazy" :src="pdf.img" class="w-full  object-cover h-32 md:h-96 rounded-xl" :alt="`punto di fornza numero ${p}` " />
             <h3 class="text-sm md:text-3xl lg:text-4xl text-primary-800 mt-4 lg:mt-8">
               {{ pdf.title }}
             </h3>
@@ -53,7 +53,7 @@ const { data: chisiamo } = await useAsyncData('chisiamo', () => queryContent('/p
     <section>
       <div class="p-6 lg:p-12 grid md:grid-cols-2 gap-24">
         <div v-motion-slide-visible-left class="image h-96">
-          <NuxtImg :src="chisiamo?.cover" class="w-full h-full object-cover rounded-md" />
+          <NuxtImg loading="lazy" :src="chisiamo?.cover" class="w-full h-full object-cover rounded-md" alt="chi siamo" />
         </div>
         <div class="max-w-xl">
           <h3 v-motion-slide-visible-right class="text-4xl  mb-12">
@@ -77,7 +77,7 @@ const { data: chisiamo } = await useAsyncData('chisiamo', () => queryContent('/p
         <template #item="{ item, index }">
           <div class="w-full flex flex-col md:flex-row justify-between px-4 py-8 gap-4 md:gap-24">
             <div class="w-full md:w-2/5 h-48 md:h-96 min-w-[40%]" :class="{ 'md:order-last ': index % 2 === 0 }">
-              <NuxtImg format="webp" :src="item.images" class="md:aspect-square w-full md:w-auto h-full object-center object-cover rounded-lg shadow-md" />
+              <NuxtImg loading="lazy" format="webp" :src="item.images" class="md:aspect-square w-full md:w-auto h-full object-center object-cover rounded-lg shadow-md" alt="gallery" />
             </div>
             <div class=" text-left flex-grow" :class="{ 'md:-order-first': index % 2 === 1 }">
               <h3 class="text-3xl md:text-6xl mb-8 font-head text-primary-500">

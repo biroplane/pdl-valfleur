@@ -3,7 +3,7 @@ title: Giardini e Terrazze
 featured: false
 visible: true
 custom: false
-images: /img/esperienza.jpg
+images: /img/esperienza.webp
 order: 9999
 ---
 **Valentino Valfleur** trasforma il tuo giardino o terrazzo in un’oasi di bellezza e serenità.

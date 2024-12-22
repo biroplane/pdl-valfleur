@@ -1,6 +1,14 @@
 ---
 title: Vasi
 categories: giardini-e-terrazze
+images: /img/servizi/vasi/vasi_1.webp
+gallery:
+  - /img/servizi/vasi/vasi_1.webp
+  - /img/servizi/vasi/vasi_2.webp
+  - /img/servizi/vasi/vasi_3.webp
+  - /img/servizi/vasi/vasi_4.webp
+  - /img/servizi/vasi/vasi_5.webp
+  - /img/servizi/vasi/vasi_6.webp
 ---
 I vasi non sono semplici contenitori, ma veri e propri elementi decorativi che contribuiscono a dare _personalità_ al tuo giardino o terrazzo. Da Valfleur, troverai una selezione di vasi di design, realizzati con materiali resistenti e raffinati, perfetti per accogliere le tue piante e fiori. Scegliamo i vasi che meglio si integrano con lo stile del tuo outdoor, garantendo un equilibrio estetico e funzionale.
 

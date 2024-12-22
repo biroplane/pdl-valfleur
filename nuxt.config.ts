@@ -47,6 +47,7 @@ export default defineNuxtConfig({
     url: 'https://valfleur.it',
     name: 'Valfleur garden',
   },
+
   ogImage: {
     defaults: {
       component: 'CustomOg',

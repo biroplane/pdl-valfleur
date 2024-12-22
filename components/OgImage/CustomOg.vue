@@ -12,9 +12,9 @@ withDefaults(defineProps<{
 
 }>(), {
   bg: 'linear-gradient(to bottom right, #171717, #131313)',
-  // bg: 'url("/img/hero.jpg")',
+
   logo: 'logo.png',
-  image: '/img/hero.jpg',
+  image: '/img/hero.webp',
 })
 </script>
 
@@ -25,16 +25,18 @@ withDefaults(defineProps<{
   >
     <img
       v-if="logo"
+      loading="lazy"
       :src="logo"
       class=""
       style="height: 100px; width: 125px;"
+      alt="logo"
     >
     <div
 
       v-if="image"
       class="absolute left-0 right-0 inset-0 w-full h-full opacity-30"
     >
-      <img :src="image" class="w-full h-full object-cover" width="1200" height="900">
+      <img loading="lazy" :src="image" class="w-full h-full object-cover" width="1200" height="900" alt="image">
     </div>
     <div class="flex flex-col items-start  max-w-md">
       <h1 class="flex gap-4 text-7xl font-bold font-head">

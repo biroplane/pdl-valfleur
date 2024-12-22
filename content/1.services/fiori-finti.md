@@ -1,6 +1,13 @@
 ---
 title: Fiori finti
 categories: piante-e-fiori
+images: /img/servizi/fiori_finti/fiori_finti_2.webp
+gallery:
+  - /img/servizi/fiori_finti/fiori_finti_4.webp
+  - /img/servizi/fiori_finti/fiori_finti_3.webp
+  - /img/servizi/fiori_finti/fiori_finti_2.webp
+  - /img/servizi/fiori_finti/fiori_finti_5.webp
+  - /img/servizi/fiori_finti/fiori_finti_1.webp
 ---
 # Fiori finti
 

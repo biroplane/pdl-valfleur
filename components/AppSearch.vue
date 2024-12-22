@@ -1,17 +1,9 @@
 <script lang="ts" setup>
 import { watchDebounced } from '@vueuse/core'
-import debounce from 'lodash/debounce'
 
 const searchTerm = ref('')
 const searchResults = ref()
-// async function search() {
-//   await debounce(async () => searchResults.value = (await searchContent(searchTerm)).value, 500)
-// }
-// const search = debounce(async () => {
-//   const results = await searchContent(searchTerm)
-//   console.log('RESULTS ', results.value)
-//   searchResults.value = results.value
-// }, 1000)
+
 watchDebounced(searchTerm, async () => {
   searchResults.value = (await searchContent(searchTerm)).value
 }, { debounce: 500, maxWait: 1000 })

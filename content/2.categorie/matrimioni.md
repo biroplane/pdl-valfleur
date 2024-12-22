@@ -3,7 +3,7 @@ title: Matrimioni
 featured: false
 visible: true
 custom: false
-images: /img/bouquet.jpg
+images: /img/bouquet.webp
 order: 9999
 ---
 Rendi indimenticabile il giorno più importante della tua vita

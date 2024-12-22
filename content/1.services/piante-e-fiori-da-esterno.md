@@ -1,6 +1,22 @@
 ---
-title: Piante e fiori da esterno e interno
+title: Piante e fiori recisi
 categories: piante-e-fiori
+images: /img/servizi/piante_e_fiori/piante_e_fiori_7.webp
+gallery:
+  - /img/servizi/piante_e_fiori/piante_e_fiori_2.webp
+  - /img/servizi/piante_e_fiori/piante_e_fiori_3.webp
+  - /img/servizi/piante_e_fiori/piante_e_fiori_1.webp
+  - /img/servizi/piante_e_fiori/piante_e_fiori_4.webp
+  - /img/servizi/piante_e_fiori/piante_e_fiori_5.webp
+  - /img/servizi/piante_e_fiori/piante_e_fiori_6.webp
+  - /img/servizi/piante_e_fiori/piante_e_fiori_7.webp
+  - /img/servizi/piante_e_fiori/piante_e_fiori_8.webp
+  - /img/servizi/piante_e_fiori/piante_e_fiori_9.webp
+  - /img/servizi/piante_e_fiori/piante_e_fiori_10.webp
+  - /img/servizi/piante_e_fiori/piante_e_fiori_11.webp
+  - /img/servizi/piante_e_fiori/piante_e_fiori_12.webp
+  - /img/servizi/piante_e_fiori/piante_e_fiori_13.webp
+  - /img/servizi/piante_e_fiori/piante_e_fiori_14.webp
 ---
 
 # Piante e fiori da esterno e interno

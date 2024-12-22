@@ -3,7 +3,7 @@ title: Piante e fiori
 featured: false
 visible: true
 custom: false
-images: /img/composizioni.jpg
+images: /img/composizioni.webp
 order: 9999
 ---
 Rendi i tuoi spazi ancora più eleganti ed accoglienti
